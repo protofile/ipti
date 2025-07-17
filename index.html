@@ -10,6 +10,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/fonts/remixicon/fonts/remixicon.css">
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="assets/css/jquery-ui.css">
@@ -18,6 +21,548 @@
     </head>
     <body>
         
+        <div class="master">
+            <header style="background: #34A18E;">
+                <div class="container">
+                    <div class="row items-center justify-between">
+                        <div class="col-4 col-md-2">
+                            <a href="#" class="logo"><img src="assets/images/ipti-images/logo.png" alt=""></a>
+                        </div>
+                        <div class="col-6 col-md-10 flex justify-end">
+                            <nav class="">
+                                <a href="#home">BERANDA</a>
+                                <a href="#about">TENTANG</a>
+                                <a href="#why">MENGAPA KAMI</a>
+                                <a href="#program">PROGRAM STUDI</a>
+                                <a href="#faq">FAQ</a>
+                                <a href="#news">NEWS</a>
+                                <a href="#testimonial">TESTIMONIAL</a>
+                                <a href="#home" class="btn btn-primary" style="background: #F59315;">DAFTAR SEKARANG</a>
+                            </nav>
+                            <div class="burger">
+                                <button><i class='ri-menu-line'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section id="home" class="hero">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="owl-carousel hero-slider">
+                                <div class="item">
+                                    <img class="for-desktop" src="assets/images/ipti-images/hero-1.jpg" alt="">
+                                    <img class="for-mobile" src="assets/images/ipti-images/hero-1-mobile.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                    <img class="for-desktop" src="assets/images/ipti-images/hero-1.jpg" alt="">
+                                    <img class="for-mobile" src="assets/images/ipti-images/hero-1-mobile.jpg" alt="">
+                                </div>
+                            </div>
+                            <form action="" class="form-card">
+                                <h4 style="color: #34A18E;">DAFTAR SEKARANG</h4>
+                                <div class="form-group">
+                                    <div class="inp-group">
+                                        <label for="">Nama</label>
+                                        <input type="text" placeholder="Nama Anda">
+                                    </div>
+                                    <div class="inp-group">
+                                        <label for="">Email</label>
+                                        <input type="email" placeholder="Email Anda">
+                                    </div>
+                                    <div class="inp-group">
+                                        <label for="">No. Handphone</label>
+                                        <input type="text" placeholder="No. handphone Anda">
+                                    </div>
+                                    <div class="inp-group">
+                                        <label for="">Sekolah Asal</label>
+                                        <input type="text" placeholder="Nama Sekolah">
+                                    </div>
+                                    <div class="inp-group">
+                                        <label for="">Provinsi Sekolah</label>
+                                        <input type="text" placeholder="Nama Provinsi">
+                                    </div>
+                                    <div class="inp-group">
+                                        <label for="">Pilih Program Studi</label>
+                                        <select name="" id="">
+                                            <option value="">Pariwisata</option>
+                                            <option value="">Public Relations</option>
+                                            <option value="">Digital Business</option>
+                                            <option value="">Hospitality</option>
+                                        </select>
+                                    </div>
+                                    <div class="block h-2"></div>
+                                    <div class="inp-group text-center">
+                                        <button class="btn btn-primary max-w-[160px] mx-auto">DAFTAR SEKARANG</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-16">
+                <div class="container">
+                    <div class="row items-center">
+                        <div class="col-md-7 md:pr-12">
+                            <div class="section-title">
+                                <h2 style="color: #34A18E;">Selamat Datang di IPTI, Masa Depan Pariwisata dan Hospitality</h2>
+                                <div class="divider" style="background: #103169;"></div>
+                            </div>
+                            <div class="section-text-ct">
+                                <p>Institut Pariwisata Tedja Indonesia (IPTI) hadir untuk menjawab tantangan global dalam pendidikan pariwisata dan hospitality. Kami menggabungkan standar internasional dengan kearifan lokal melalui kurikulum yang inovatif dan fasilitas yang berorientasi masa depan.</p>
+                                <p>Di IPTI, mahasiswa tidak hanya belajar di kelas, tetapi juga terjun langsung dalam dunia industri melalui metode pembelajaran berbasis proyek dan magang industri. Visi kami adalah membentuk lulusan yang tidak hanya siap kerja, tetapi juga siap memberi dampak positif bagi masyarakat dan industri.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="assets/images/ipti-images/img-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="why" class="py-16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="section-title">
+                                <h2 style="color: #34A18E;">Mengapa Memilih Kami?</h2>
+                                <div class="divider" style="background: #103169;"></div>
+                            </div>
+                            <img src="assets/images/ipti-images/img-2.png" alt="">
+                        </div>
+                        <div class="col-md-7 md:pl-12">
+                            <div class="section-text-ct">
+                                <p>IPTI bukan hanya kampus, tetapi gerbang menuju dunia profesional hospitality dan pariwisata dengan jejaring global dan peluang tanpa batas.</p>
+                                <div class="box-1">
+                                    <img src="assets/images/ipti-images/ico-rocket.png" alt="" class="box-icon">
+                                    <div class="text">
+                                        <h4>Pengakuan Global & Mitra Industri</h4>
+                                        <p>Sebagai anggota EHL dan mitra resmi Marriott International serta Cambridge University, IPTI membuka pintu ke dunia kerja internasional dengan jaringan yang luas.</p>
+                                    </div>
+                                </div>
+                                <div class="box-1">
+                                    <img src="assets/images/ipti-images/ico-medal.png" alt="" class="box-icon">
+                                    <div class="text">
+                                        <h4>Fasilitas Modern & Siap Industri</h4>
+                                        <p>Asrama, laboratorium, dan ruang pelatihan kami dirancang menyerupai lingkungan industri nyata agar mahasiswa siap menghadapi tantangan dunia kerja sesungguhnya.</p>
+                                    </div>
+                                </div>
+                                <div class="box-1">
+                                    <img src="assets/images/ipti-images/ico-case.png" alt="" class="box-icon">
+                                    <div class="text">
+                                        <h4>Pengembangan Karier yang Berkelanjutan</h4>
+                                        <p>IPTI tidak hanya mendidik, tapi juga memberdayakan mahasiswa melalui program kewirausahaan sosial, pendanaan usaha, dan keterlibatan aktif dalam komunitas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="program" class="py-16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <h2 style="color: #34A18E;">Program Studi</h2>
+                                <div class="divider" style="background: #103169;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Pariwisata</h5>
+                                    <p>Program ini mengajarkan pemahaman lintas budaya, pemasaran digital pariwisata, dan perancangan event, sekaligus membekali mahasiswa dengan keahlian dalam ekowisata dan pariwisata berkelanjutan yang sedang menjadi tren global.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Public Relations</h5>
+                                    <p>Dirancang untuk mencetak profesional komunikasi yang ahli dalam media handling, produksi konten, komunikasi korporat, serta strategi digital di sektor pariwisata dan hospitality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Digital Business</h5>
+                                    <p>Program ini mengintegrasikan teknologi dengan sektor bisnis pariwisata. Mahasiswa akan dipersiapkan menjadi pelaku utama dalam era Smart Tourism yang berbasis digital dan inovatif.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Hospitality</h5>
+                                    <p>Program hospitality di IPTI menawarkan pengalaman belajar langsung melalui pelatihan profesional, simulasi industri nyata, dan pengelolaan hotel yang membentuk mahasiswa menjadi pemimpin industri perhotelan masa depan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta mt-32 mb-16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="cta-box" style="background: #34A18E;">
+                                <div class="text">
+                                    <p>Siap untuk membangun masa depan Anda di industri pariwisata dan hospitality global? Daftarkan diri Anda di IPTI dan jadilah bagian dari generasi pemimpin yang berdampak.</p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary" style="background: #F59315;">DAFTAR SEKARANG</a>
+                                    </div>
+                                </div>
+                                <img src="assets/images/ipti-images/img-cta-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="py-16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 my-8 md:my-0">
+                            <img src="assets/images/ipti-images/img-3.png" alt="">
+                        </div>
+                        <div class="col-md-7 md:pl-12">
+                            <div class="section-title">
+                                <h2 style="color: #34A18E;">FAQ</h2>
+                                <div class="divider" style="background: #103169;"></div>
+                                <h5 style="color: #F59315;">Ada Pertanyaan? Coba Lihat Ini!</h5>
+                            </div>
+
+                            <div class="accordion">
+                                <div class="accordion-item active">
+                                    <div class="accordion-header">
+                                        <h6>Apa persyaratan pendaftaran?</h6>
+                                        <button style="background: #34A18E;">
+                                            <i class='ri-arrow-down-s-line'></i>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p>Pendaftar wajib memiliki ijazah SMA/sederajat dan menunjukkan minat yang kuat di bidang hospitality dan pariwisata. Beberapa program mungkin mensyaratkan wawancara.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h6>Apa persyaratan pendaftaran?</h6>
+                                        <button style="background: #34A18E;">
+                                            <i class='ri-arrow-down-s-line'></i>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p>Pendaftar wajib memiliki ijazah SMA/sederajat dan menunjukkan minat yang kuat di bidang hospitality dan pariwisata. Beberapa program mungkin mensyaratkan wawancara.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h6>Apa persyaratan pendaftaran?</h6>
+                                        <button style="background: #34A18E;">
+                                            <i class='ri-arrow-down-s-line'></i>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p>Pendaftar wajib memiliki ijazah SMA/sederajat dan menunjukkan minat yang kuat di bidang hospitality dan pariwisata. Beberapa program mungkin mensyaratkan wawancara.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h6>Apa persyaratan pendaftaran?</h6>
+                                        <button style="background: #34A18E;">
+                                            <i class='ri-arrow-down-s-line'></i>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p>Pendaftar wajib memiliki ijazah SMA/sederajat dan menunjukkan minat yang kuat di bidang hospitality dan pariwisata. Beberapa program mungkin mensyaratkan wawancara.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h6>Apa persyaratan pendaftaran?</h6>
+                                        <button style="background: #34A18E;">
+                                            <i class='ri-arrow-down-s-line'></i>
+                                        </button>
+                                    </div>
+                                    <div class="accordion-body">
+                                        <p>Pendaftar wajib memiliki ijazah SMA/sederajat dan menunjukkan minat yang kuat di bidang hospitality dan pariwisata. Beberapa program mungkin mensyaratkan wawancara.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="news" class="py-16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <h2 style="color: #34A18E;">News</h2>
+                                <div class="divider" style="background: #103169;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Mengapa IPTI Menjadi Pilihan Tepat untuk Generasi Profesional Hospitality dan Pariwisata?</h5>
+                                    <div class="meta-info">
+                                        <strong>By: Admin</strong> &bull; 12 Juli 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Inside IPTI: Kampus Modern untuk Masa Depan Profesional Hospitality</h5>
+                                    <div class="meta-info">
+                                        <strong>By: Admin</strong> &bull; 12 Juli 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Dibentuk untuk Masa Depan: Cara IPTI Mempersiapkan Mahasiswa Hadapi Dunia Kerja Global</h5>
+                                    <div class="meta-info">
+                                        <strong>By: Admin</strong> &bull; 12 Juli 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="box-2">
+                                <div class="pic">
+                                    <img src="assets/images/ipti-images/news-1.jpg" alt="">
+                                </div>
+                                <div class="text">
+                                    <h5>Bergabung dengan Angkatan Pertama IPTI: Jadi Bagian dari Sejarah Pendidikan Hospitality di Indonesia</h5>
+                                    <div class="meta-info">
+                                        <strong>By: Admin</strong> &bull; 12 Juli 2025
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonial" class="py-16">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title">
+                                <h2 style="color: #34A18E;">Testimonials</h2>
+                                <div class="divider" style="background: #103169;"></div>
+                                <h5 style="color: #F59315;">Apa Kata Mahasiswa Kami</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="testimonial-slider owl-carousel">
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="stars">
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ex elit</p>
+                                        <div class="user">
+                                            <img src="assets/images/ipti-images/avatar-1.png" alt="">
+                                            <div class="text">
+                                                <h6>Marion Renata</h6>
+                                                <span>Alumni S2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="stars">
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ex elit</p>
+                                        <div class="user">
+                                            <img src="assets/images/ipti-images/avatar-2.png" alt="">
+                                            <div class="text">
+                                                <h6>Marion Renata</h6>
+                                                <span>Alumni S2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="stars">
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ex elit</p>
+                                        <div class="user">
+                                            <img src="assets/images/ipti-images/avatar-3.png" alt="">
+                                            <div class="text">
+                                                <h6>Marion Renata</h6>
+                                                <span>Alumni S2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="stars">
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ex elit</p>
+                                        <div class="user">
+                                            <img src="assets/images/ipti-images/avatar-1.png" alt="">
+                                            <div class="text">
+                                                <h6>Marion Renata</h6>
+                                                <span>Alumni S2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="testimonial-card">
+                                        <div class="stars">
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                            <i class='ri-star-s-fill'></i>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget ex elit</p>
+                                        <div class="user">
+                                            <img src="assets/images/ipti-images/avatar-1.png" alt="">
+                                            <div class="text">
+                                                <h6>Marion Renata</h6>
+                                                <span>Alumni S2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <div class="row justify-between">
+                        <div class="col-md-4">
+                            <div class="site-info">
+                                <div>
+                                    <a href="#" class="foot-logo">
+                                        <img src="assets/images/ipti-images/logo-footer.png" alt="">
+                                    </a>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <div class="social-media">
+                                    <a href="#"><i class='ri-facebook-fill'></i></a>
+                                    <a href="#"><i class='ri-twitter-fill'></i></a>
+                                    <a href="#"><i class='ri-instagram-fill'></i></a>
+                                    <a href="#"><i class='ri-youtube-fill'></i></a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="site-info">
+                                <h4>Services</h4>
+                                <div class="sitemap">
+                                    <a href="#">Link</a>
+                                    <a href="#">Link</a>
+                                    <a href="#">Link</a>
+                                    <a href="#">Link</a>
+                                    <a href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="site-info">
+                                <h4>Sitemap</h4>
+                                <div class="sitemap">
+                                    <a href="#">Help Center</a>
+                                    <a href="#">Contact Support</a>
+                                    <a href="#">Pendaftaran</a>
+                                    <a href="#">Link</a>
+                                    <a href="#">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="site-info">
+                                <h4>Location</h4>
+                                <p>1245 Madison Avenue, Apt 4B, New York, NY 10028</p>
+                                <div class="contact-info">
+                                    <div class="contact-icon" style="color: #F59315;"><i class='ri-phone-line'></i></div>
+                                    <div class="text">
+                                        <span>Customer Support</span>
+                                        <h4 style="color: #34A18E;">(888) 4000-2424</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright" style="background: #34A18E;">
+                <p>Copyright © 2025 Tedja Indonesia, All rights reserved.</p>
+            </div>
+
+        </div>
 
 
 
@@ -25,5 +570,6 @@
         <script src="assets/js/jquery-ui.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/main.js"></script>
+
     </body>
 </html>

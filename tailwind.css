@@ -4,6 +4,344 @@
 
 @layer utilities{
 
-    
+    *{
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        @apply transition-all;
+    }
 
+    html, body{
+        @apply bg-slate-100;
+    }
+    body{
+        @apply pt-20;
+    }
+
+    img{
+        @apply w-full;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        @apply text-slate-800;
+    }
+
+    .master{
+        @apply w-full overflow-x-hidden;
+    }
+
+    .for-mobile{
+        @apply !block md:!hidden;
+    }
+    .for-desktop{
+        @apply !hidden md:!block;
+    }
+    h1{
+        @apply text-[36px] font-bold;
+    }
+    h2{
+        @apply text-[32px] font-bold;
+    }
+    h3{
+        @apply text-[24px] font-bold;
+    }
+    h4{
+        @apply text-[20px] font-bold;
+    }
+    h5{
+        @apply text-[18px] font-bold;
+    }
+    h6{
+        @apply text-[16px] font-bold;
+    }
+    p{
+        @apply text-[16px] text-slate-600 leading-[200%];
+    }
+
+    .container{
+        @apply max-w-[1200px];
+    }
+
+    .form-group{
+        @apply flex flex-col gap-2 mb-0;
+    }
+    .inp-group{
+        @apply w-full flex flex-col gap-1;
+    }
+    .inp-group label{
+        @apply text-xs text-slate-500 mb-0;
+    }
+    .inp-group input,
+    .inp-group select{
+        @apply w-full bg-slate-50 border border-slate-300 rounded-lg h-9 py-1 px-4 text-sm text-slate-800;
+    }
+    .inp-group select option{
+        @apply text-sm;
+    }
+
+    header{
+        @apply py-3 fixed w-full top-0 left-0 z-50 shadow-xl;
+    }
+    nav{
+        @apply flex justify-end items-center gap-4;
+    }
+    nav a{
+        @apply text-sm text-slate-200 hover:no-underline hover:text-[#F59315];
+    }
+    nav a.active{
+        @apply text-[#F59315];
+    }
+
+    .logo img,
+    .foot-logo img{
+        @apply h-12 object-contain;
+    }
+    .foot-logo{
+        @apply inline-block;
+    }
+
+    .btn{
+        @apply rounded-full text-sm py-2 !px-4 border-none;
+    }
+
+    .hero{
+        @apply py-7 relative;
+    }
+    .hero .container{
+        @apply relative;
+    }
+    .form-card{
+        @apply w-[347px] absolute right-[60px] top-[55%] -translate-y-1/2 z-10 bg-white p-7 rounded-2xl shadow-2xl;
+    }
+    .form-card h4{
+        @apply mb-4;
+    }
+    .hero img{
+        @apply w-full rounded-3xl;
+    }
+
+    .section-title{
+        @apply flex flex-col gap-4 mb-8;
+    }
+    .section-title .divider{
+        @apply w-16 h-1;
+    }
+
+    .section-text-ct{
+        @apply flex flex-col gap-4;
+    }
+
+    .box-1{
+        @apply flex items-start gap-6 py-4 border-b border-dashed border-slate-300;
+    }
+    .box-1 .text{
+        @apply flex flex-col gap-2;
+    }
+    .box-1 img{
+        @apply w-[60px] h-[60px] flex-grow-0 flex-shrink-0;
+    }
+
+    .box-2{
+        @apply flex flex-col gap-4;
+    }
+    .box-2 img{
+        @apply rounded-2xl;
+    }
+    .box-2 h5{
+        @apply leading-[150%];
+    }
+    .box-2 .text{
+        @apply flex flex-col gap-1;
+    }
+    .box-2 .text p{
+        @apply text-sm leading-[200%];
+    }
+    .box-2 .meta-info{
+        @apply text-xs pt-2 text-slate-500;
+    }
+
+    .cta-box{
+        @apply relative p-16 h-[240px] rounded-3xl flex justify-center items-end gap-16;
+    }
+    .cta-box .text{
+        @apply flex flex-col gap-4;
+    }
+    .cta-box p{
+        @apply text-slate-100;
+    }
+    .cta-box img{
+        @apply -mb-16;
+    }
+
+    .accordion{
+        @apply flex flex-col gap-4 ;
+    }
+    .accordion-item{
+        @apply flex flex-col gap-4 border-b border-slate-300 pb-4;
+    }
+    .accordion-header{
+        @apply flex gap-4 items-center justify-between;
+    }
+    .accordion-header button{
+        @apply flex justify-center items-center flex-grow-0 flex-shrink-0 w-8 h-8 rounded-full text-white;
+    }
+    .accordion-body{
+        @apply hidden;
+    }
+    .accordion-item.active .accordion-body{
+        @apply block;
+    }
+    .testimonial-card{
+        @apply bg-white p-4 rounded-2xl flex flex-col gap-1;
+    }
+    .stars{
+        @apply flex items-center gap-1 text-lg text-[#F59315];
+    }
+    .testimonial-card .user{
+        @apply mt-2 flex gap-2 items-center;
+    }
+    .testimonial-card .user img{
+        @apply w-12 h-12 rounded-full object-cover;
+    }
+    .testimonial-card .user .text span{
+        @apply text-xs text-slate-500;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next{
+        @apply w-10 h-10 rounded-full bg-slate-400; 
+    }
+    .owl-carousel .owl-nav button.owl-prev span,
+    .owl-carousel .owl-nav button.owl-next span{
+        @apply text-2xl text-white;
+        line-height: 100%;
+    }
+    .hero-slider .owl-nav button.owl-prev,
+    .hero-slider .owl-nav button.owl-next{
+        @apply absolute top-[45%] -translate-x-1/2;
+    }
+    .hero-slider .owl-nav button.owl-prev{
+        @apply -left-[30px];
+    }
+    .hero-slider .owl-nav button.owl-next{
+        @apply -right-[70px];
+    }
+
+    .testimonial-slider .owl-nav{
+        @apply flex gap-2 absolute right-0 top-[-65px];
+    }
+
+    footer{
+        @apply py-16 bg-slate-200;
+    }
+    footer p{
+        @apply leading-[150%]
+    }
+    .site-info{
+        @apply flex flex-col gap-4;
+    }
+    .social-media{
+        @apply flex gap-2 items-center;
+    }
+    .social-media a{
+        @apply text-slate-500
+    }
+    .sitemap{
+        @apply flex flex-col gap-2;
+    }
+    .sitemap a{
+        @apply text-slate-700;
+    }
+    .contact-info{
+        @apply flex gap-4 mt-4;
+    }
+    .contact-icon{
+        @apply w-14 h-14 rounded-full bg-white flex justify-center items-center text-2xl;
+    }
+    .contact-info h4{
+        @apply font-semibold;
+    }
+    .copyright{
+        @apply flex justify-center items-center p-2;
+    }
+    .copyright p{
+        @apply text-slate-100 text-center leading-[150%];
+    }
+
+    .burger{
+        @apply w-10 h-10 text-slate-200;
+    }
+    .burger button{
+        @apply float-right flex w-full h-full justify-center items-center text-2xl;
+    }
+
+    @media only screen and (max-width: 768px){
+
+        h1{
+            @apply text-[28px] font-bold;
+        }
+        h2{
+            @apply text-[24px] font-bold;
+        }
+        h3{
+            @apply text-[20px] font-bold;
+        }
+        h4{
+            @apply text-[18px] font-bold;
+        }
+        h5{
+            @apply text-[16px] font-bold;
+        }
+        h6{
+            @apply text-[14px] font-bold;
+        }
+        p{
+            @apply text-[14px] text-slate-600 leading-[200%];
+        }
+
+        nav{
+            @apply fixed top-[73px] -right-[240px] w-[240px] h-screen flex-col gap-6 bg-white justify-start items-end p-6;
+        }
+        nav.show{
+            @apply right-0;
+        }
+        nav a{
+            @apply text-slate-800;
+        }
+
+        .form-card{
+            @apply relative translate-y-0 top-auto right-auto;
+        }
+        .hero-slider .owl-nav button.owl-next{
+            @apply -right-[10px];
+        }
+        .hero-slider .owl-nav button.owl-prev{
+            @apply left-[30px];
+        }
+
+        .section-text-ct{
+            @apply my-4;
+        }
+        .box-1{
+            @apply flex-col;
+        }
+        .box-2{
+            @apply mb-8;
+        }
+        .cta-box{
+            @apply flex-col h-auto p-8;
+        }
+        .cta-box .text p{
+            @apply text-center;
+        }
+        .cta-box .text div{
+            @apply text-center;
+        }
+        .site-info{
+            @apply mt-8;
+        }
+    }
 }
