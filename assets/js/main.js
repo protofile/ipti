@@ -1,16 +1,16 @@
 $(document).ready(function(){
-  $(".hero-slider").owlCarousel({
+    $(".hero-slider").owlCarousel({
         items: 1,
         nav: true,
-        autplay: true,
+        autoplay: true,
         loop: true
-        });
+    });
 
-        $(".testimonial-slider").owlCarousel({
+    $(".testimonial-slider").owlCarousel({
         items: 3,
         nav: true,
         dots: false,
-        autplay: true,
+        autoplay: true,
         margin: 20,
         loop: true,
         responsive : {
@@ -21,6 +21,31 @@ $(document).ready(function(){
             // breakpoint from 480 up
             480 : {
                 items: 1
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 3
+            },
+            // breakpoint from 768 up
+            1280 : {
+                items: 3
+            }
+        }
+    });
+
+    $(".partner-slider").owlCarousel({
+        items: 3,
+        nav: false,
+        autoplay: true,
+        loop: true,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 2
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 3
             },
             // breakpoint from 768 up
             768 : {

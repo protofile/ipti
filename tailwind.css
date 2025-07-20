@@ -278,6 +278,14 @@
         @apply float-right flex w-full h-full justify-center items-center text-2xl;
     }
 
+    .partner-slider .item{
+        @apply flex justify-center items-center;
+    }
+
+    .partner-slider .item img{
+        @apply w-[200px] h-[80px] object-contain;
+    }
+
     @media only screen and (max-width: 768px){
 
         h1{
