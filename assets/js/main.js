@@ -57,6 +57,30 @@ $(document).ready(function(){
             }
         }
     });
+    $(".gallery-slider").owlCarousel({
+        items: 5,
+        nav: false,
+        autoplay: true,
+        loop: true,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 3
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 3
+            },
+            // breakpoint from 768 up
+            1280 : {
+                items: 5
+            }
+        }
+    });
 
     var docEl = $(document),
         headerEl = $('header'),

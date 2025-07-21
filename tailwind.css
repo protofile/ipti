@@ -286,6 +286,16 @@
         @apply w-[200px] h-[80px] object-contain;
     }
 
+    .gallery-card .text{
+        @apply w-full h-full p-4 flex flex-col gap-4 justify-center items-center absolute top-0 left-0 transition-all opacity-0 hover:opacity-100 bg-[rgba(0,0,0,0.5)];
+    }
+    .gallery-card .text h6{
+        @apply text-white text-center;
+    }
+    .gallery-card .text p{
+        @apply leading-[150%] text-sm text-slate-300 text-center;
+    }
+
     @media only screen and (max-width: 768px){
 
         h1{
@@ -350,6 +360,9 @@
         }
         .site-info{
             @apply mt-8;
+        } 
+        .partner-slider .item{
+            @apply p-4;
         }
     }
 }
