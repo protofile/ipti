@@ -79,4 +79,9 @@ $(document).ready(function(){
         $("nav").toggleClass("show");
         $(this).children("i").toggleClass("ri-menu-line ri-close-line");
     });
+
+    $(".accordion-header").click(function(){
+        $($(this).next()).slideToggle(500);
+        $($(this).children("button").children("i")).toggleClass("ri-arrow-down-s-line ri-arrow-up-s-line");
+    });
 });

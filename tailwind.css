@@ -180,7 +180,7 @@
         @apply flex flex-col gap-4 ;
     }
     .accordion-item{
-        @apply flex flex-col gap-4 border-b border-slate-300 pb-4;
+        @apply flex flex-col border-b border-slate-300 pb-4;
     }
     .accordion-header{
         @apply flex gap-4 items-center justify-between;
@@ -191,9 +191,9 @@
     .accordion-body{
         @apply hidden;
     }
-    .accordion-item.active .accordion-body{
+    /* .accordion-item.active .accordion-body{
         @apply block;
-    }
+    } */
     .testimonial-card{
         @apply bg-white p-4 rounded-2xl flex flex-col gap-1;
     }
