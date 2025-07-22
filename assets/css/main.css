@@ -1109,7 +1109,8 @@ nav a.active {
   right: -70px;
 }
 
-.testimonial-slider .owl-nav {
+.testimonial-slider .owl-nav,
+    .gallery-slider .owl-nav {
   position: absolute;
   right: 0px;
   top: -65px;

@@ -230,7 +230,8 @@
         @apply -right-[70px];
     }
 
-    .testimonial-slider .owl-nav{
+    .testimonial-slider .owl-nav,
+    .gallery-slider .owl-nav{
         @apply flex gap-2 absolute right-0 top-[-65px];
     }
 
