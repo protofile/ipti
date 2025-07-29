@@ -998,6 +998,7 @@ nav a.active {
 
 .accordion-item {
   display: flex;
+  height: auto;
   flex-direction: column;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
@@ -1026,12 +1027,23 @@ nav a.active {
 }
 
 .accordion-body {
-  display: none;
+  max-height: 0px;
+  overflow: hidden;
 }
 
-/* .accordion-item.active .accordion-body{
-        @apply block;
-    } */
+.accordion-item.active .accordion-body {
+  max-height: 300px;
+  transition: all ease-out 2s;
+  -webkit-transition: all ease-out 2s;
+  -moz-transition: all ease-out 2s;
+  -ms-transition: all ease-out 2s;
+  -o-transition: all ease-out 2s;
+}
+
+.accordion-item.active .accordion-header button {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 
 .testimonial-card {
   display: flex;
@@ -1112,7 +1124,7 @@ nav a.active {
 .testimonial-slider .owl-nav,
     .gallery-slider .owl-nav {
   position: absolute;
-  right: 0px;
+  right: calc((100vw - 1200px) / 2);
   top: -65px;
   display: flex;
   gap: 0.5rem;
@@ -1329,6 +1341,7 @@ footer p {
     position: relative;
     top: auto;
     right: auto;
+    width: 100%;
     --tw-translate-y: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }

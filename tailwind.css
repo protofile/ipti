@@ -180,7 +180,7 @@
         @apply flex flex-col gap-4 ;
     }
     .accordion-item{
-        @apply flex flex-col border-b border-slate-300 pb-4;
+        @apply flex flex-col border-b border-slate-300 pb-4 h-auto;
     }
     .accordion-header{
         @apply flex gap-4 items-center justify-between;
@@ -189,11 +189,19 @@
         @apply flex justify-center items-center flex-grow-0 flex-shrink-0 w-8 h-8 rounded-full text-white;
     }
     .accordion-body{
-        @apply hidden;
+        @apply  max-h-0 overflow-hidden;
     }
-    /* .accordion-item.active .accordion-body{
-        @apply block;
-    } */
+    .accordion-item.active .accordion-body{
+        @apply max-h-[300px];
+        transition: all ease-out 2s;
+        -webkit-transition: all ease-out 2s;
+        -moz-transition: all ease-out 2s;
+        -ms-transition: all ease-out 2s;
+        -o-transition: all ease-out 2s;
+}
+    .accordion-item.active .accordion-header button{
+        @apply rotate-180;
+    }
     .testimonial-card{
         @apply bg-white p-4 rounded-2xl flex flex-col gap-1;
     }
@@ -232,7 +240,7 @@
 
     .testimonial-slider .owl-nav,
     .gallery-slider .owl-nav{
-        @apply flex gap-2 absolute right-0 top-[-65px];
+        @apply flex gap-2 absolute right-[calc((100vw-1200px)/2)] top-[-65px];
     }
 
     footer{
@@ -332,7 +340,7 @@
         }
 
         .form-card{
-            @apply relative translate-y-0 top-auto right-auto;
+            @apply relative translate-y-0 top-auto right-auto w-full;
         }
         .hero-slider .owl-nav button.owl-next{
             @apply -right-[10px];

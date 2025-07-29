@@ -105,7 +105,9 @@ $(document).ready(function(){
     });
 
     $(".accordion-header").click(function(){
-        $($(this).next()).slideToggle(500);
-        $($(this).children("button").children("i")).toggleClass("ri-arrow-down-s-line ri-arrow-up-s-line");
+        $(".accordion-item").removeClass("active");
+        $($(this).parent()).addClass("active");
+        //$($(this).next()).slideToggle(500);
+        //$($(this).children("button").children("i")).toggleClass("ri-arrow-down-s-line ri-arrow-up-s-line");
     });
 });
