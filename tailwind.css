@@ -166,14 +166,14 @@
     .cta-box{
         @apply relative p-12 h-[240px] rounded-3xl flex justify-center items-end gap-16;
     }
-    .cta-box .text{
+    .cta-box .text{ 
         @apply flex flex-col gap-4;
     }
     .cta-box p{
         @apply text-slate-100;
     }
     .cta-box img{
-        @apply -mb-16;
+        @apply -mb-12;
     }
 
     .accordion{
