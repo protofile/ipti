@@ -164,7 +164,7 @@
     }
 
     .cta-box{
-        @apply relative p-16 h-[240px] rounded-3xl flex justify-center items-end gap-16;
+        @apply relative p-12 h-[240px] rounded-3xl flex justify-center items-end gap-16;
     }
     .cta-box .text{
         @apply flex flex-col gap-4;
